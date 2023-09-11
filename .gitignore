@@ -1,0 +1,67 @@
+*.json
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environment
+venv/
+env/
+*.env
+
+# Logs and log files
+logs/
+*.log
+
+# Dependency directories
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-selfcheck.json
+
+# Local development settings
+*.ini
+*.cfg
+*.env
+*.conf
+
+# Environment-specific files
+.env
+*.env
+.env.*
+
+# Jupyter Notebook temporary files
+.ipynb_checkpoints/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Compiled files and packages
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.egg-info
+dist-info/
+
+# Database files
+*.sqlite3
+
+# Miscellaneous
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
