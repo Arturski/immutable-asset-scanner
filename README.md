@@ -37,11 +37,14 @@ pip install requests
 4. **Run the Script:** Execute the script by running the following command, replacing the placeholders with your API URL and the desired number of worker processes:
 
 
-Replace `"YOUR_API_URL_HERE"` with the actual API URL you want to query and `NUMBER_OF_WORKERS_HERE` with the desired number of worker processes.
+Replace `"YOUR_API_URL_HERE"` with the actual API URL you want to query and `NUMBER_OF_WORKERS_HERE` with the desired number of worker processes. An optional valye of `TEST_ID` is possible if you are running multiple tests if not set `output_default.json`
 
 ```bash
-python assetScanner.py -q "YOUR_API_URL_HERE" -w NUMBER_OF_WORKERS_HERE -i "mycollection"
+python assetScanner.py -q "YOUR_API_URL_HERE" -w NUMBER_OF_WORKERS_HERE -i "TEST_ID"
+
+python3 assetScanner.py -q "https://api.sandbox.x.immutable.com/v1/assets?page_size=200&order_by=updated_at&direction=desc&collection=0xea152929e1a46eaa53a6c48d072bcc8e6ffcca1b" -w 5 -i "full_collection_run"
 ```
+
 
 `-q`, `--query_url`: Immutable X Asset API Url ref: https://docs.immutable.com/x/reference/#/operations/listAssets
 
