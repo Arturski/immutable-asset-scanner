@@ -41,12 +41,14 @@ Replace `"YOUR_API_URL_HERE"` with the actual API URL you want to query and `NUM
 
 ```bash
 python assetScanner.py -q "YOUR_API_URL_HERE" -w NUMBER_OF_WORKERS_HERE -i "mycollection"
-"""
--q, --queryU
--w, --num_workers: every item is pulled that is pulled from the assets api is placed in a queue, each worker scans one item at a time. Consider rate limitations when setting this url tests have a 5 retry, 5s exponential backoff (5, 5*2, 10*2..)
--i, --testID: Optional string to accompany the output file
-"""
 ```
+
+`-q`, `--query_url`: Immutable X Asset API Url ref: https://docs.immutable.com/x/reference/#/operations/listAssets
+
+`-w`, `--num_workers`: every item is pulled that is pulled from the assets api is placed in a queue, each worker scans one item at a time. Consider rate limitations when setting this url tests have a 5 retry, 5s exponential backoff (5, 5*2, 10*2..)
+
+`-i`, `--testID`: Optional string to accompany the output file
+
 
 You can wrap the script in a a line of bash if you want to batch process multiple collections or asset buckets
 
