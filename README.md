@@ -71,3 +71,29 @@ while read i; do
 done < ./collection-list.txt
 ```
 
+Sample console output:
+
+```bash
+Starting  5  workers..
+
+Collector started, reading data from API
+Imported 20 tokens
+
+Total number of tokens scanned: 20
+Total tokens with null value problems: 20
+Total tokens with bad url problem: 5
+Total tokens with missing metadata: 0
+
+Top 5 field names with null values:
+uri: 20
+
+Top 5 Token IDs with URL errors:
+4: 2
+2: 2
+17: 2
+12: 2
+18: 2
+
+Top 5 Token IDs with missing metadata:
+Report saved to output-0x6a44969e9f98afb70353e6358e7aec4290baac7a.json
+```
